@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class T4_matrix {
-    double matrix[][];
+    int matrix[][];
     int m,n;
     Scanner sc = new Scanner(System.in);
 
@@ -11,13 +11,13 @@ public class T4_matrix {
         m = sc.nextInt();
         System.out.print("\nEnter the no. of columns : ");
         n = sc.nextInt();
-        matrix = new double[m][n];
+        matrix = new int[m][n];
         System.out.println("\nEnter the values in the Matrix : ");
         for(int i=0;i<m;i++)
         {
             for(int j=0;j<n;j++)
             {
-                matrix[i][j] = sc.nextDouble();
+                matrix[i][j] = sc.nextInt();
             }
         }
     }
@@ -26,7 +26,7 @@ public class T4_matrix {
         T4_matrix c = new T4_matrix();
         c.m = b.m;
         c.n = b.n;
-        c.matrix = new double[c.m][c.n];
+        c.matrix = new int[c.m][c.n];
         int i, j;
 
         if (this.m != b.m || this.n != b.n) {
